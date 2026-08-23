@@ -1,0 +1,28 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Pp]ublish/
+out/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs & crash dumps
+*.log
+crash.dmp
+
+# Local secrets (credentials live in MYCODER_DB_* env vars)
+appsettings.*.local.json
+*.env

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <RootNamespace>MyAssistant.Core</RootNamespace>
+    <AssemblyName>MyAssistant.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="MyAssistant.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyAssistant.Abstractions\MyAssistant.Abstractions.csproj" />
+    <ProjectReference Include="..\MyAssistant.Providers\MyAssistant.Providers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.*" />
+  </ItemGroup>
+</Project>

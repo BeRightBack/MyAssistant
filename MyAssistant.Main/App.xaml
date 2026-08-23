@@ -1,0 +1,22 @@
+﻿<Application x:Class="MyAssistant.Main.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MyAssistant.Main"
+             xmlns:converters="clr-namespace:MyAssistant.Main.Converters"
+             xmlns:services="clr-namespace:MyAssistant.Main.Services">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/DarkTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converters:RoleToColorConverter x:Key="RoleToColorConverter"/>
+            <converters:RoleToIconConverter x:Key="RoleToIconConverter"/>
+            <converters:RoleToTruncateConverter x:Key="RoleToTruncateConverter"/>
+            <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+            <converters:InverseBoolToVisibilityConverter x:Key="InverseBoolToVisibilityConverter"/>
+            <converters:BoolToSurfaceConverter x:Key="BoolToSurfaceConverter"/>
+            <converters:BoolToPrimaryConverter x:Key="BoolToPrimaryConverter"/>
+            <services:MarkdownToFlowDocumentConverter x:Key="MarkdownConverter"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

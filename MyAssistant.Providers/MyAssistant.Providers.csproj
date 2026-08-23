@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <RootNamespace>MyAssistant.Providers</RootNamespace>
+    <AssemblyName>MyAssistant.Providers</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyAssistant.Abstractions\MyAssistant.Abstractions.csproj" />
+  </ItemGroup>
+</Project>
